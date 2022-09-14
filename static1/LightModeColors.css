@@ -1,0 +1,433 @@
+html {
+  --main-color: red;
+}
+
+body, html {
+  background: #F3F0FF;
+  background-color: #F3F0FF;
+}
+
+::-webkit-input-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+.workSpace__title {
+  color: #191919;
+}
+
+.workSpace__inner {
+  background-color: white;
+  -webkit-box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+}
+
+.workSpace__field input {
+  color: #191919;
+  border-bottom: 1px solid #BFBFBF;
+}
+.workSpace__field.error input {
+  border-bottom: 1px solid #CC0000;
+}
+.workSpace__field.error .workSpace__passwordHolder {
+  border-bottom: 1px solid #CC0000;
+}
+.workSpace__field.error span {
+  color: #CC0000;
+}
+
+.workSpace__passwordHolder {
+  border-bottom: 1px solid #BFBFBF;
+}
+
+.apperianceSwitcher {
+  background-color: white;
+  -webkit-box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+          box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+}
+.apperianceSwitcher:active .apperianceSwitcher__slider {
+  background: #A87ED9;
+  background: -webkit-gradient(linear, left top, right bottom, from(#A87ED9), to(#D9BAD9));
+  background: linear-gradient(to bottom right, #A87ED9, #D9BAD9);
+}
+
+.workSpace__addedBlock {
+  color: #646464;
+}
+
+.workSpace__link.left {
+  color: #A04BFA;
+}
+
+.workSpace__link.right, .workSpace__link.center {
+  color: #4861F0;
+}
+
+.workSpace__button {
+  background: rgb(233, 192, 253);
+  background: linear-gradient(135deg, rgb(233, 192, 253) 0%, rgb(246, 192, 252) 16%, rgb(194, 145, 250) 52%, rgb(103, 147, 235) 100%);
+}
+.workSpace__button:active {
+  background: rgb(212, 165, 217);
+  background: linear-gradient(135deg, rgb(212, 165, 217) 0%, rgb(199, 165, 217) 22%, rgb(168, 126, 217) 52%, rgb(95, 136, 217) 100%);
+}
+
+.workSpace__avatar span {
+  background-color: #F49FFF;
+}
+
+.apperianceSwitcher__slider {
+  background: #C292FA;
+  background: -webkit-gradient(linear, left top, right bottom, from(#C292FA), to(#FFDBFF));
+  background: linear-gradient(to bottom right, #C292FA, #FFDBFF);
+}
+
+.header__inner {
+  background-color: white;
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.13);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.13);
+}
+.header__backButton {
+  background-color: white;
+  color: #B88AED;
+  -webkit-box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+          box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+}
+.header__backButton:active {
+  background-color: #e6e6e6;
+}
+.header__unfoldButton {
+  background-color: white;
+  color: #B88AED;
+  -webkit-box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+          box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+}
+.header__unfoldButton:active {
+  background-color: #e6e6e6;
+}
+
+#moneyCountInHeader {
+  color: #FFD800;
+}
+
+.navigationBlock__number {
+  color: #C7C7C7;
+}
+.navigationBlock__number.active {
+  color: white;
+}
+
+.bubble {
+  background: #ffdbff;
+  background: radial-gradient(circle at 20% 20%, #ffdbff 3%, #f6c0fc 16%, #c291fa 56%, #6793eb 76%);
+  -webkit-box-shadow: 0 15px 20px rgba(195, 141, 247, 0.21);
+          box-shadow: 0 15px 20px rgba(195, 141, 247, 0.21);
+}
+
+.swiper-slide {
+  -webkit-box-shadow: 0 10px 40px rgba(108, 0, 255, 0.17);
+          box-shadow: 0 10px 40px rgba(108, 0, 255, 0.17);
+}
+.swiper-slide.addNew {
+  background: rgb(246, 192, 252);
+  background: linear-gradient(315deg, rgb(246, 192, 252) 0%, rgb(194, 145, 250) 100%);
+}
+
+.swiper-slide__controlBlock {
+  background: rgb(0, 0, 0);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.17)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.swiper-slide__button {
+  color: white;
+  background: rgb(196, 171, 245);
+  background: linear-gradient(315deg, rgb(196, 171, 245) 0%, rgb(202, 173, 246) 30%, rgb(246, 192, 252) 100%);
+}
+.swiper-slide__button:active {
+  background: rgb(173, 152, 217);
+  background: linear-gradient(315deg, rgb(173, 152, 217) 0%, rgb(180, 154, 219) 30%, rgb(219, 171, 224) 100%);
+}
+
+.swiper-slide__status {
+  color: white;
+}
+
+.swiper-slide__options {
+  background-color: white;
+  color: rgb(202, 173, 246);
+}
+.swiper-slide__options:active {
+  background-color: #e6e6e6;
+}
+
+.slideWall {
+  background-color: rgba(80, 80, 80, 0.42);
+}
+
+.slideWall__sheet {
+  background-color: white;
+}
+
+.slideWall__lock {
+  color: #CECECE;
+}
+
+.slideWall__title {
+  color: #2C2C2C;
+}
+
+.slideWall__subtitle {
+  color: #9A9A9A;
+}
+
+.slideWall__insideTitle {
+  color: #2B2B2B;
+}
+
+.slideWall__button {
+  background: #D3D3D3;
+  color: black;
+}
+.slideWall__button.primary {
+  color: white;
+  background: rgb(196, 171, 245);
+  background: linear-gradient(315deg, rgb(196, 171, 245) 0%, rgb(246, 192, 252) 100%);
+}
+.slideWall__button.primary:active {
+  background: rgb(171, 150, 214);
+  background: linear-gradient(315deg, rgb(171, 150, 214) 0%, rgb(214, 167, 219) 100%);
+}
+.slideWall__button:active {
+  background: #BFBFBF;
+}
+
+.gameContent img {
+  border-right: 8px solid #F7F5FF;
+  border-left: 8px solid #F7F5FF;
+  -webkit-box-shadow: 0px 0px 70px white;
+          box-shadow: 0px 0px 70px white;
+}
+
+.gameControls {
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px rgba(108, 0, 255, 0.11);
+          box-shadow: 0 0 20px rgba(108, 0, 255, 0.11);
+}
+.gameControls__text {
+  color: #2C2C2C;
+}
+.gameControls__backButton {
+  color: #B88AED;
+  background-color: rgba(238, 226, 252, 0.38);
+}
+.gameControls__backButton:active {
+  background-color: rgba(213, 183, 248, 0.38);
+}
+.gameControls__variants button {
+  color: white;
+  background: rgb(196, 171, 245);
+  background: linear-gradient(315deg, rgb(196, 171, 245) 0%, rgb(246, 192, 252) 100%);
+}
+.gameControls__variants button:active {
+  background: rgb(171, 150, 214);
+  background: linear-gradient(315deg, rgb(171, 150, 214) 0%, rgb(214, 167, 219) 100%);
+}
+
+.profileBlock {
+  background-color: #F3F0FF;
+  -webkit-box-shadow: 0px 3px 30px rgba(108, 0, 255, 0.16);
+          box-shadow: 0px 3px 30px rgba(108, 0, 255, 0.16);
+}
+.profileBlock__title {
+  color: #2B2B2B;
+}
+.profileBlock__email {
+  color: #ACACAC;
+}
+.profileBlock__cross {
+  background-color: rgba(238, 226, 252, 0.38);
+  color: #B88AED;
+}
+.profileBlock__cross:active {
+  background-color: rgba(213, 183, 248, 0.38);
+}
+.profileBlock__settingsCenter button {
+  background-color: white;
+  color: #2B2B2B;
+}
+.profileBlock__settingsCenter button.destructive {
+  color: #FF3161;
+}
+.profileBlock__settingsCenter button:active {
+  background-color: whitesmoke;
+}
+.profileBlock__notificationCenter .contextInfo {
+  color: #646464;
+}
+
+.horizontalSelector {
+  background-color: #E7D9FF;
+}
+.horizontalSelector__backBlock {
+  background-color: white;
+}
+.horizontalSelector__button {
+  color: #666666;
+}
+.horizontalSelector__button.active {
+  color: #2B2B2B;
+}
+
+.messageBlock__content {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+}
+.messageBlock__icon {
+  color: white;
+}
+.messageBlock__title {
+  color: #3E3E3E;
+}
+.messageBlock__text {
+  color: #646464;
+}
+.messageBlock__button {
+  color: #A04BFA;
+}
+
+.FNAlert__inner {
+  background-color: white;
+}
+.FNAlert__title {
+  color: #3E3E3E;
+}
+.FNAlert__text {
+  color: #646464;
+}
+.FNAlert__buttonStack button {
+  background-color: #EAEAEA;
+  color: #9B9B9B;
+}
+.FNAlert__buttonStack button:active {
+  background-color: lightgray;
+}
+.FNAlert__buttonStack button.destructive {
+  color: #FF5C5C;
+  background-color: #EAEAEA;
+}
+.FNAlert__buttonStack button.primary {
+  color: white;
+  background: rgb(196, 171, 245);
+  background: linear-gradient(315deg, rgb(196, 171, 245) 0%, rgb(246, 192, 252) 100%);
+}
+.FNAlert__buttonStack button.primary:active {
+  background: rgb(171, 150, 214);
+  background: linear-gradient(315deg, rgb(171, 150, 214) 0%, rgb(214, 167, 219) 100%);
+}
+
+.FNNotification {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+}
+.FNNotification__title {
+  color: #2B2B2B;
+}
+.FNNotification__text {
+  color: #2B2B2B;
+}
+.FNNotification__cross {
+  background-color: #EAEAEA;
+  color: #9B9B9B;
+}
+.FNNotification__cross:active {
+  background-color: lightgray;
+}
+.FNNotification__buttonHolder button {
+  background-color: #EAEAEA;
+  color: #9B9B9B;
+}
+.FNNotification__buttonHolder button:active {
+  background-color: lightgray;
+}
+.FNNotification__buttonHolder button.primary {
+  color: white;
+  background: rgb(196, 171, 245);
+  background: linear-gradient(315deg, rgb(196, 171, 245) 0%, rgb(246, 192, 252) 100%);
+}
+.FNNotification__buttonHolder button.primary:active {
+  background: rgb(171, 150, 214);
+  background: linear-gradient(315deg, rgb(171, 150, 214) 0%, rgb(214, 167, 219) 100%);
+}
+
+.quiz__title {
+  color: #3E3E3E;
+}
+.quiz__subtitle {
+  color: #646464;
+}
+.quiz .question {
+  background-color: white;
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+  color: #3E3E3E;
+}
+.quiz button {
+  color: white;
+  background: rgb(196, 171, 245);
+  background: linear-gradient(315deg, rgb(196, 171, 245) 0%, rgb(246, 192, 252) 100%);
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+}
+.quiz button:active {
+  background: rgb(171, 150, 214);
+}
+
+.FNAdsBanner {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    background-color: #F9F7FF;
+    -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.13);
+            box-shadow: 0 3px 10px rgba(108, 0, 255, 0.13);
+  }
+  .header__backButton {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .header__backButton:active {
+    background: none;
+  }
+  .header__switcher {
+    background-color: #EEEBFF;
+  }
+
+  .header__inner {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}

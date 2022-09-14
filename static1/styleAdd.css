@@ -1,0 +1,848 @@
+.gameBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  z-index: -1;
+}
+
+.gameContent {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+
+.gameContent img {
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-right: 8px solid teal;
+  border-left: 8px solid teal;
+}
+
+.gameControls {
+  position: absolute;
+  bottom: 2vh;
+  right: 8vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px;
+  background-color: teal;
+  margin: 0 auto;
+  width: 60vw;
+  min-width: 420px;
+  border-radius: 36px;
+  z-index: 1;
+  max-height: calc(200px + 10vh);
+  min-height: calc(135px + 10vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gameControls__text {
+  font-size: 20px;
+  font-weight: 200;
+  color: darkred;
+  overflow: auto;
+}
+.gameControls__backButton {
+  padding: 0;
+  border: none;
+  background: none;
+  background-color: peachpuff;
+  color: palevioletred;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.gameControls__buttons {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+  min-height: 40px;
+}
+.gameControls__variants {
+  overflow: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gameControls__variants button {
+  background: none;
+  border: none;
+  background-color: palevioletred;
+  color: peachpuff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 40px;
+  max-height: 54px;
+  min-height: 40px;
+  cursor: pointer;
+  margin: 2px;
+  white-space: nowrap;
+}
+.gameControls__variants button i {
+  margin-right: 2px;
+  font-size: 0.8em;
+}
+
+.FNNotification {
+  background-color: teal;
+  width: 320px;
+  min-height: 60px;
+  max-width: 96%;
+  position: fixed;
+  top: 1%;
+  right: -400px;
+  z-index: 7;
+  border-radius: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.FNNotification.active {
+  right: 2%;
+}
+.FNNotification__imageHolder {
+  height: 44px;
+  width: 44px;
+  overflow: hidden;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.FNNotification__imageHolder img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.FNNotification__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.FNNotification__titleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.FNNotification__title {
+  color: darkred;
+  font-size: 17px;
+}
+.FNNotification__cross {
+  padding: 0;
+  border: none;
+  background: none;
+  background-color: skyblue;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: midnightblue;
+  cursor: pointer;
+  font-size: 8px;
+}
+.FNNotification__cross:active {
+  background-color: #67c1e6;
+}
+.FNNotification__text {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 200;
+  color: darkred;
+}
+.FNNotification__buttonHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.FNNotification__buttonHolder button {
+  border: none;
+  background: none;
+  height: 28px;
+  border-radius: 8px;
+  background-color: skyblue;
+  color: midnightblue;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 5px;
+  font-size: 15px;
+}
+.FNNotification__buttonHolder button:active {
+  background-color: #67c1e6;
+}
+.FNNotification__buttonHolder button.primary {
+  background-color: palegreen;
+  color: darkgreen;
+}
+.FNNotification__buttonHolder button.primary:active {
+  background-color: #71f971;
+}
+
+.profileBlock {
+  position: fixed;
+  display: none;
+  top: 5%;
+  right: 3%;
+  height: 92%;
+  width: 30%;
+  max-width: 460px;
+  min-width: 350px;
+  background-color: teal;
+  border-radius: 32px;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 6;
+}
+.profileBlock.active {
+  display: block;
+}
+.profileBlock__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.profileBlock__title {
+  color: darkred;
+  font-size: 32px;
+}
+.profileBlock__email {
+  margin-top: 4px;
+  color: salmon;
+  font-size: 14px;
+  font-weight: 200;
+}
+.profileBlock__cross {
+  padding: 0;
+  background: none;
+  border: none;
+  background-color: lawngreen;
+  color: green;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profileBlock__selector {
+  margin: 14px auto;
+  width: 80%;
+}
+.profileBlock__settingsCenter {
+  display: none;
+}
+.profileBlock__settingsCenter.active {
+  display: block;
+}
+.profileBlock__settingsCenter button {
+  border: none;
+  background: none;
+  display: block;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  color: darkblue;
+  margin: 6px 0;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.profileBlock__settingsCenter button.destructive {
+  color: pink;
+}
+.profileBlock__notificationCenter {
+  display: none;
+}
+.profileBlock__notificationCenter.active {
+  display: block;
+}
+.profileBlock__notificationCenter .contextInfo {
+  text-align: center;
+  color: teal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 14%;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.horizontalSelector {
+  position: relative;
+  background-color: seagreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2px;
+  z-index: 1;
+}
+.horizontalSelector__button {
+  border: none;
+  background: none;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.horizontalSelector__button.active {
+  color: grey;
+}
+.horizontalSelector__backArea {
+  position: absolute;
+  height: 36px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 4px;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.horizontalSelector__backBlock {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  background-color: lightseagreen;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.FNAlert {
+  display: none;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.FNAlert.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.FNAlert.active .FNAlert__inner {
+  opacity: 1;
+}
+.FNAlert__inner {
+  position: relative;
+  width: 30%;
+  min-width: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px;
+  border-radius: 28px;
+  z-index: 16;
+  background-color: pink;
+}
+.FNAlert__title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 34px;
+  font-weight: 400px;
+}
+.FNAlert__text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+}
+.FNAlert__buttonStack {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.FNAlert__buttonStack button {
+  margin-top: 8px;
+  border: none;
+  background: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  background-color: salmon;
+  cursor: pointer;
+  font-size: 14px;
+}
+.FNAlert__buttonStack button.primary {
+  background-color: coral;
+}
+.FNAlert__buttonStack button.destructive {
+  background-color: darkturquoise;
+}
+
+.quiz {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.quiz__titleBlock {
+  margin-bottom: 10px;
+}
+.quiz__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+  font-weight: 400;
+  color: peachpuff;
+}
+.quiz__title img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.quiz__subtitle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  color: peachpuff;
+}
+.quiz button {
+  background: none;
+  border: none;
+  background-color: palevioletred;
+  color: peachpuff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.question {
+  background-color: teal;
+  border-radius: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 24px;
+  color: salmon;
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+.question div {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  font-size: 18px;
+  font-weight: 300;
+}
+.question div input[type=radio] {
+  height: 30px;
+  width: 30px;
+  margin-right: 4px;
+  border-radius: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.AMPContent {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+.AMPContent__mainTitle {
+  color: darkgreen;
+  font-size: 34px;
+  font-weight: 500;
+}
+.AMPContent .fileBlock input[type=file] {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  opacity: 0px;
+}
+.AMPContent .fileBlock__dropArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 6%;
+  width: 40vmin;
+  height: 40vmin;
+  border: 2px solid peachpuff;
+  border-radius: 8%;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: rgba(100, 30, 30, 0.5);
+}
+.AMPContent .fileBlock__dropArea.drop {
+  border-style: dashed;
+  background-color: rgba(15, 50, 15, 0.5);
+}
+.AMPContent .fileBlock__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.AMPContent .fileBlock__verdict {
+  width: 100%;
+}
+.AMPContent .fileBlock__title {
+  color: darkgreen;
+  font-size: 28px;
+  font-weight: 500;
+}
+.AMPContent .fileBlock__subtitle {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.AMPContent .fileBlock__subtitle a {
+  color: green;
+  text-decoration: none;
+}
+.AMPContent .fileBlock__fileSign {
+  background-color: darkblue;
+  width: 30%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+.AMPContent .fileBlock__resHolder {
+  color: orange;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.AMPContent .fileBlock__crossHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.AMPContent .fileBlock__crossHolder button {
+  --size: 20px;
+  height: var(--size);
+  width: var(--size);
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: orange;
+}
+.AMPContent .AMPSubmitButton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-diraction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.AMPContent .AMPSubmitButton button {
+  background: none;
+  border: none;
+  background-color: palevioletred;
+  color: peachpuff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.verdictBlock {
+  border-radius: 10px;
+  background-color: teal;
+}
+.verdictBlock__header {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.verdictBlock__title {
+  color: darkred;
+  font-size: 18px;
+  font-weight: 300;
+}
+.verdictBlock__button {
+  color: darkred;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+}
+.verdictBlock__inner {
+  padding: 0 10px;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  overflow: auto;
+  min-height: calc(100% - 62px);
+  font-size: 18px;
+  font-weight: 400;
+}
+.verdictBlock__conclusion {
+  height: 30px;
+  padding: 0 10px;
+}
+
+.mark-success {
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #58E03F;
+  font-size: 0.7em;
+  border-radius: 50%;
+  margin: 4px;
+}
+.mark-exclamation {
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #FFCE00;
+  font-size: 0.7em;
+  border-radius: 50%;
+  margin: 4px;
+}
+.mark-cross {
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #EF4A34;
+  font-size: 0.7em;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.FNAdsBanner {
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  top: 10vh;
+  left: 0;
+  overflow: hidden;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.FNAdsBanner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.FNAdsBanner.gameAds {
+  padding: 0px;
+  position: relative;
+  top: initial;
+  left: initial;
+  margin-bottom: 10px;
+  border-radius: 1vh;
+}

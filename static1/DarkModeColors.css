@@ -1,0 +1,433 @@
+body, html {
+  background: #080014;
+  background-color: #080014;
+}
+
+html:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 999px;
+  top: -999px;
+  background-color: tomato;
+}
+
+::-webkit-input-placeholder {
+  color: #818181;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #818181;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #818181;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #818181;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #818181;
+  opacity: 1;
+}
+
+.workSpace__title {
+  color: #FFFFFF;
+}
+
+.workSpace__inner {
+  background-color: rgb(67, 67, 67);
+  -webkit-box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+}
+
+.workSpace__field input {
+  color: #FFFFFF;
+  border-bottom: 1px solid #818181;
+}
+.workSpace__field.error input {
+  border-bottom: 1px solid #E83434;
+}
+.workSpace__field.error .workSpace__passwordHolder {
+  border-bottom: 1px solid #E83434;
+}
+.workSpace__field.error span {
+  color: #E83434;
+}
+
+.workSpace__passwordHolder {
+  border-bottom: 1px solid #818181;
+}
+
+.apperianceSwitcher {
+  background-color: rgb(67, 67, 67);
+  -webkit-box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+          box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+}
+.apperianceSwitcher:active .apperianceSwitcher__slider {
+  background: #3E65B3;
+  background: -webkit-gradient(linear, left top, right bottom, from(#3E65B3), to(#6B5391));
+  background: linear-gradient(to bottom right, #3E65B3, #6B5391);
+}
+
+.workSpace__addedBlock {
+  color: #909090;
+}
+
+.workSpace__link.left {
+  color: #A04BFA;
+}
+
+.workSpace__link.right, .workSpace__link.center {
+  color: #4861F0;
+}
+
+.workSpace__button {
+  background: rgb(111, 67, 155);
+  background: linear-gradient(135deg, rgb(111, 67, 155) 0%, rgb(129, 94, 203) 22%, rgb(113, 98, 222) 49%, rgb(77, 124, 219) 100%);
+}
+.workSpace__button:active {
+  background: rgb(91, 55, 128);
+  background: linear-gradient(135deg, rgb(91, 55, 128) 0%, rgb(103, 75, 163) 22%, rgb(82, 72, 163) 49%, rgb(64, 104, 184) 100%);
+}
+
+.workSpace__avatar span {
+  background-color: #A07FE3;
+}
+
+.apperianceSwitcher__slider {
+  background: #4D7CDB;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4D7CDB), to(#8164AF));
+  background: linear-gradient(to bottom right, #4D7CDB, #8164AF);
+}
+
+.header__inner {
+  background-color: #434343;
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.2);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.2);
+}
+.header__backButton {
+  background-color: #434343;
+  color: #9576DA;
+  -webkit-box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+          box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+}
+.header__backButton:active {
+  background-color: #3c3c3c;
+}
+.header__unfoldButton {
+  background-color: #434343;
+  color: #9576DA;
+  -webkit-box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+          box-shadow: 0 3px 6px rgba(108, 0, 255, 0.16);
+}
+.header__unfoldButton:active {
+  background-color: #3c3c3c;
+}
+
+#moneyCountInHeader {
+  color: #FFD800;
+}
+
+.navigationBlock__number {
+  color: #7E7E7E;
+}
+.navigationBlock__number.active {
+  color: white;
+}
+
+.bubble {
+  background: #A07FE3;
+  background: radial-gradient(circle at 20% 20%, #A07FE3 3%, #897FD1 50%, #4D7CDB 80%);
+  -webkit-box-shadow: 0 15px 20px rgba(195, 141, 247, 0.15);
+          box-shadow: 0 15px 20px rgba(195, 141, 247, 0.15);
+}
+
+.swiper-slide {
+  -webkit-box-shadow: 0 10px 30px rgba(108, 0, 255, 0.13);
+          box-shadow: 0 10px 30px rgba(108, 0, 255, 0.13);
+}
+.swiper-slide.addNew {
+  background: rgb(179, 155, 245);
+  background: linear-gradient(315deg, rgb(179, 155, 245) 0%, rgb(104, 131, 234) 100%);
+}
+
+.swiper-slide__controlBlock {
+  background: rgb(0, 0, 0);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.17)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.swiper-slide__button {
+  color: white;
+  background: #9677D9;
+  background: linear-gradient(135deg, #9677D9 0%, #7162DE 30%, #4D7CDB 100%);
+}
+.swiper-slide__button:active {
+  background: linear-gradient(135deg, #825dd2 0%, #5948d8 30%, #346ad6 100%);
+}
+
+.swiper-slide__status {
+  color: white;
+}
+
+.swiper-slide__options {
+  background-color: #434343;
+  color: #7162DE;
+}
+.swiper-slide__options:active {
+  background-color: #3c3c3c;
+}
+
+.slideWall {
+  background-color: rgba(80, 80, 80, 0.42);
+}
+
+.slideWall__sheet {
+  background-color: #434343;
+}
+
+.slideWall__lock {
+  color: #989898;
+}
+
+.slideWall__title {
+  color: #FFFFFF;
+}
+
+.slideWall__subtitle {
+  color: #9A9A9A;
+}
+
+.slideWall__insideTitle {
+  color: #FFFFFF;
+}
+
+.slideWall__button {
+  background: #A3A3A3;
+  color: black;
+}
+.slideWall__button.primary {
+  color: white;
+  background: #9677D9;
+  background: linear-gradient(135deg, #9677D9 0%, #7162DE 30%, #4D7CDB 100%);
+}
+.slideWall__button.primary:active {
+  background: linear-gradient(135deg, #825dd2 0%, #5948d8 30%, #346ad6 100%);
+}
+.slideWall__button:active {
+  background: #939393;
+}
+
+.gameContent img {
+  border-right: 8px solid #2C2C2C;
+  border-left: 8px solid #2C2C2C;
+  -webkit-box-shadow: 0px 0px 70px black;
+          box-shadow: 0px 0px 70px black;
+}
+
+.gameControls {
+  background-color: #434343;
+  -webkit-box-shadow: 0 0 20px rgba(108, 0, 255, 0.11);
+          box-shadow: 0 0 20px rgba(108, 0, 255, 0.11);
+}
+.gameControls__text {
+  color: white;
+}
+.gameControls__backButton {
+  color: #9576DA;
+  background-color: rgba(0, 0, 0, 0.38);
+}
+.gameControls__backButton:active {
+  background-color: rgba(0, 0, 0, 0.48);
+}
+.gameControls__variants button {
+  color: white;
+  background: #9677D9;
+  background: linear-gradient(135deg, #9677D9 0%, #7162DE 30%, #4D7CDB 100%);
+}
+.gameControls__variants button:active {
+  background: linear-gradient(135deg, #825dd2 0%, #5948d8 30%, #346ad6 100%);
+}
+
+.profileBlock {
+  background-color: #121212;
+  -webkit-box-shadow: 0px 3px 30px rgba(108, 0, 255, 0.16);
+          box-shadow: 0px 3px 30px rgba(108, 0, 255, 0.16);
+}
+.profileBlock__title {
+  color: white;
+}
+.profileBlock__email {
+  color: #656565;
+}
+.profileBlock__cross {
+  background-color: #292929;
+  color: #9576DA;
+}
+.profileBlock__cross:active {
+  background-color: #252525;
+}
+.profileBlock__settingsCenter button {
+  background-color: #434343;
+  color: white;
+}
+.profileBlock__settingsCenter button.destructive {
+  color: #FF2626;
+}
+.profileBlock__settingsCenter button:active {
+  background-color: #363636;
+}
+.profileBlock__notificationCenter .contextInfo {
+  color: #909090;
+}
+
+.horizontalSelector {
+  background-color: #1F1F1F;
+}
+.horizontalSelector__backBlock {
+  background-color: #434343;
+}
+.horizontalSelector__button {
+  color: white;
+}
+.horizontalSelector__button.active {
+  color: #EBEBEB;
+}
+
+.messageBlock__content {
+  background-color: #434343;
+  -webkit-box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 30px rgba(108, 0, 255, 0.1);
+}
+.messageBlock__icon {
+  color: white;
+}
+.messageBlock__title {
+  color: white;
+}
+.messageBlock__text {
+  color: #909090;
+}
+.messageBlock__button {
+  color: #4E4AD9;
+}
+
+.FNAlert__inner {
+  background-color: #434343;
+}
+.FNAlert__title {
+  color: #FFFFFF;
+}
+.FNAlert__text {
+  color: #909090;
+}
+.FNAlert__buttonStack button {
+  background-color: #696969;
+  color: #A8A8A8;
+}
+.FNAlert__buttonStack button:active {
+  background-color: #5f5f5f;
+}
+.FNAlert__buttonStack button.destructive {
+  color: #FF2626;
+  background-color: #696969;
+}
+.FNAlert__buttonStack button.primary {
+  color: white;
+  background: #9677D9;
+  background: linear-gradient(135deg, #9677D9 0%, #7162DE 30%, #4D7CDB 100%);
+}
+.FNAlert__buttonStack button.primary:active {
+  background: linear-gradient(135deg, #825dd2 0%, #5948d8 30%, #346ad6 100%);
+}
+
+.FNNotification {
+  background-color: #434343;
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+}
+.FNNotification__title {
+  color: white;
+}
+.FNNotification__text {
+  color: white;
+}
+.FNNotification__cross {
+  background-color: #6C6C6C;
+  color: #9F9F9F;
+}
+.FNNotification__cross:active {
+  background-color: #616161;
+}
+.FNNotification__buttonHolder button {
+  background-color: #6C6C6C;
+  color: #9F9F9F;
+}
+.FNNotification__buttonHolder button:active {
+  background-color: #616161;
+}
+.FNNotification__buttonHolder button.primary {
+  color: white;
+  background: #9677D9;
+  background: linear-gradient(135deg, #9677D9 0%, #7162DE 30%, #4D7CDB 100%);
+}
+.FNNotification__buttonHolder button.primary:active {
+  background: linear-gradient(135deg, #825dd2 0%, #5948d8 30%, #346ad6 100%);
+}
+
+.quiz__title {
+  color: white;
+}
+.quiz__subtitle {
+  color: #909090;
+}
+.quiz .question {
+  background-color: #434343;
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+  color: white;
+}
+.quiz button {
+  color: white;
+  background: #9677D9;
+  background: linear-gradient(135deg, #9677D9 0%, #7162DE 30%, #4D7CDB 100%);
+  -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+          box-shadow: 0 3px 10px rgba(108, 0, 255, 0.1);
+}
+.quiz button:active {
+  background: linear-gradient(135deg, #825dd2 0%, #5948d8 30%, #346ad6 100%);
+}
+
+.FNAdsBanner {
+  background-color: #434343;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    background-color: #1A1A1A;
+    -webkit-box-shadow: 0 3px 10px rgba(108, 0, 255, 0.13);
+            box-shadow: 0 3px 10px rgba(108, 0, 255, 0.13);
+  }
+  .header__backButton {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .header__backButton:active {
+    background: none;
+  }
+  .header__switcher {
+    background-color: #1F1F1F;
+  }
+
+  .header__inner {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}

@@ -1,0 +1,225 @@
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    top: -170px;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  .header__inner {
+    width: 100%;
+    margin-bottom: 20px;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 54px;
+    padding-right: 46px;
+  }
+  .header__inner.fullWidth {
+    margin: 10px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .header__unfoldButton {
+    position: absolute;
+    top: 194px;
+    right: 10px;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header .registrationImageBlock-header {
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header__switcher {
+    height: 40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-display: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header__backButton {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    background: none;
+  }
+  .header__backButton i {
+    margin-right: 3px;
+  }
+
+  .header.active {
+    top: 0px;
+  }
+  .header.active .header__unfoldButton {
+    top: 24px;
+  }
+  .header.active .registrationImageBlock-header {
+    top: 20px;
+  }
+
+  .profileBlock {
+    width: 94vw;
+    max-width: initial;
+    display: block;
+    top: -100%;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+  }
+  .profileBlock.active {
+    opacity: 1;
+    top: 5%;
+  }
+
+  .footerReg {
+    position: relative;
+    z-index: 1;
+  }
+
+  .workSpace {
+    width: 100%;
+    max-width: 360px;
+    min-width: initial;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10px;
+  }
+  .workSpace__inner {
+    min-width: initial;
+    padding: 16px;
+    border-radius: 30px;
+  }
+  .workSpace__avatar span {
+    width: 96px;
+    height: 96px;
+  }
+
+  .messageBlock {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10px;
+  }
+  .messageBlock__content {
+    min-width: initial;
+    width: 100%;
+  }
+  .messageBlock__title {
+    font-size: 24px;
+  }
+
+  .gameContent {
+    top: 0;
+    border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .gameContent img {
+    border: none;
+    height: initial;
+  }
+
+  .gameControls {
+    width: 100%;
+    border-radius: 0;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    min-height: 100px;
+    min-width: initial;
+  }
+  .gameControls__text {
+    font-size: 16px;
+  }
+
+  .swiper {
+    height: 120vmin;
+    padding: 25vmin 0 !important;
+  }
+
+  .swiper-slide {
+    border-radius: 30px;
+  }
+  .swiper-slide__button {
+    font-size: 24px;
+    width: 100%;
+    max-width: initial;
+    border-radius: 15px;
+  }
+  .swiper-slide__controlBlock {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+  .slideWall__sheet {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .quiz {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  .quiz .question {
+    width: 100%;
+  }
+  .quiz__subtitle {
+    font-size: 14px;
+  }
+
+  .FNAlert {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10px;
+  }
+  .FNAlert__inner {
+    min-width: initial;
+    width: 100%;
+  }
+  .FNAlert__title {
+    font-size: 24px;
+  }
+}
