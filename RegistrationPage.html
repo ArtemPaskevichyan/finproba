@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/styleAdd.css">
+	<link id="webSiteApperiance" rel="stylesheet" type="text/css" href="../static/LightModeColors.css">
+	<link rel="stylesheet" type="text/css" href="../static/styleMobile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="https://finproba.ru/static/imgs/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://finproba.ru/static/imgs/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://finproba.ru/static/imgs/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="https://finproba.ru/static/imgs/favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Регистрация</title>
+</head>
+<body>
+	<div class="content">
+		<div class="registrationImageBlock">
+			<img src="../static/imgs/logo_name.png">
+		</div>
+
+		<div class="workSpace">
+			<div class="workSpace__title">
+				Регистрация
+			</div>
+			<div class="workSpace__inner">
+				<div class="workSpace__avatar">
+					<span>
+						<img src="static/imgs/profilePreview.png">
+					</span>
+				</div>
+
+				<div class="workSpace__fields">
+					<div class="workSpace__field">
+						<input id="email" type="email" placeholder="Почта" >
+						<span id="emailError">Введите адрес электронной почты</span>
+					</div>
+					<div class="workSpace__field">
+						<input id="name" type="text" placeholder="Имя" >
+						<span id="nameError"></span>
+					</div>
+					<div class="workSpace__field">
+						<div class="workSpace__passwordHolder">
+							<input id="password" type="password" placeholder="Пароль" >
+							<button class="workSpace__passwordButton" onclick="switchPasswordState('password')">
+								<img id="passwordButton" src="../static/imgs/password_eye.png">
+							</button>
+						</div>
+						<span id="passwordError"></span>
+					</div>
+					<div class="workSpace__field">
+						<div class="workSpace__passwordHolder">
+							<input id="passwordR" type="password" placeholder="Повторите пароль">
+							<button class="workSpace__passwordButton" onclick="switchPasswordState('passwordR')">
+								<img id="passwordRButton" src="../static/imgs/password_eye.png">
+							</button>
+						</div>
+						<span id="passwordRError"></span>
+					</div>
+				</div>
+
+				<button class="workSpace__button baseButton" onclick="fieldsPreviousCheckUp('Регистрация')">Далее</button>
+			</div>
+		</div>
+
+		<div class="footerReg">
+			<div class="footerReg__links">
+				<a href="https://t.me/finproba2022" class="footerReg__link">
+					<img src="../static/imgs/tg_logo.png" alt="">
+				</a>
+				<a href="https://vk.com/finproba" class="footerReg__link">
+					<img src="../static/imgs/vk_logo.png" alt="">
+				</a>
+			</div>
+
+			<span id="themeSwitcher" class="footerReg__switcher apperianceSwitcher" onclick="switchTheme()">
+				<span class="apperianceSwitcher__slider">
+					<img src="">
+				</span>
+			</span>
+		</div>
+	</div>
+
+	<div class="FNAlert" id="FNAlert" onclick="">
+    	<div class="FNAlert__inner">
+    		<div class="FNAlert__title">
+    			Покупка модуля
+    		</div>
+    		<div class="FNAlert__text">
+    			Модуль стоимостью 20 монет.
+				При подтверждении покупки с вашего аккаунта будет списано 20 монет
+    		</div>
+    		<div class="FNAlert__buttonStack">
+    			<button class="FNAlert__button closeButton" onclick="FNAlertClose()">OK</button>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="FNNotification" id="FNNotification">
+		<div class="FNNotification__imageHolder">
+			<img/>
+		</div>
+		<div class="FNNotification__info">
+			<div class="FNNotification__titleBlock">
+				<span class="FNNotification__title"></span>
+				<button class="FNNotification__cross" onclick="FNNotificationClose()"><i class="icon-cross"></i> </button>
+			</div>
+			<div class="FNNotification__text"></div>
+			<div class="FNNotification__buttonHolder">
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Metrika counter -->
+	<script type="text/javascript" > 
+	 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; 
+	 m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) 
+	 (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
+	 
+	 ym(89959410, "init", { 
+	 clickmap:true, 
+	 trackLinks:true, 
+	 accurateTrackBounce:true 
+	 }); 
+	</script> 
+	<noscript><div><img src="https://mc.yandex.ru/watch/89959410" style="position: absolute; left: -9999px;" alt="" /></div></noscript>
+		
+</body>
+
+<script src="../static/baseScript.js"></script>
+<script src="../static/signInUpScript.js"></script>
+
+<script src="static/testScript.js">
+
+
+</script>
+</html>

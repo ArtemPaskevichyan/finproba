@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/styleAdd.css">
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link id="webSiteApperiance" rel="stylesheet" type="text/css" href="../static/LightModeColors.css">
+	<link rel="stylesheet" type="text/css" href="../static/styleMobile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link rel="stylesheet" href="../static/iconStyles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://finproba.ru/static/imgs/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://finproba.ru/static/imgs/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://finproba.ru/static/imgs/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="https://finproba.ru/static/imgs/favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<!-- <meta name="theme-color" content="#ffffff"> -->
+	<meta name="theme-color" content="#f6f8fa" media="(prefers-color-scheme: light)">
+  	<meta name="theme-color" content="#161b22" media="(prefers-color-scheme: dark)">
+
+	<title>Финпроба</title>
+</head>
+<body>
+	<div class="header">
+		<button class="header__backButton noselect" onclick="exitFromGame()">
+			<i class="icon-arrowLeft"></i>
+			Выход
+		</button>
+
+		<div class="header__inner fullWidth">
+			<span class="header__content-links">
+				<div class="footerReg__links">
+					<a href="https://t.me/finproba2022" class="footerReg__link">
+						<img src="../static/imgs/tg_logo.png" alt="">
+					</a>
+					<a href="https://vk.com/finproba" class="footerReg__link">
+						<img src="../static/imgs/vk_logo.png" alt="">
+					</a>
+				</div>
+			</span>
+			<span class="header__content-controls">
+				<button class="header__profileImage" onclick="profileOpenClose()">
+					<img src="../static/imgs/profile.png">
+				</button>
+				<span id="moneyCountInHeader">0</span>
+				<button class="header__addMoneyImage">
+					<img src="../static/imgs/plusPng.png">
+				</button>
+			</span>
+		</div>
+
+		<div class="header__switcher">
+			<span id="themeSwitcher" class="footerReg__switcher apperianceSwitcher noselect" onclick="switchTheme()">
+				<span class="apperianceSwitcher__slider">
+					<img src="">
+				</span>
+			</span>
+		</div>
+
+		<button class="header__unfoldButton" onclick="showHideHeader()"><i class="icon-list"></i></button>
+	</div>
+
+	<div class="gameBackground" id="backgroundImage">
+	</div>
+
+	<div class="gameContent">
+		<img id="gameScene" src="">
+	</div>
+
+	<div class="gameControls">
+		<!-- <div class="FNAdsBanner gameAds">
+	    	<img src="static/imgs/adsTest.jpg"/>
+	    </div> -->
+	    
+		<div id="textToMakeTyping" class="gameControls__text">
+
+		</div>
+		<div class="gameControls__buttons">
+			<div class="gameControls__variants">
+				<button class="gameControls__nextButton" onclick="goToNextCard()">
+					Далее<i class="icon-arrowRight"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="profileBlock" id="profileBlock">
+        <div class="profileBlock__controls">
+            <div class="profileBlock__title" id="PB-title">Профиль</div>
+            <button class="profileBlock__cross" onclick="profileOpenClose()"><i class="icon-cross"></i></button>
+        </div>
+        <div class="profileBlock__email" id="PB-email">email</div>
+
+        <div class="profileBlock__selector horizontalSelector" id="horizontalSelector">
+            <button class="horizontalSelector__button active" onclick="HSSelect('horizontalSelector', 1, displayProfileSettings)">Настройки</button>
+            <!-- <button class="horizontalSelector__button" onclick="HSSelect('horizontalSelector', 2, displayProfileProgress)">Прогресс</button> -->
+            <button class="horizontalSelector__button" onclick="HSSelect('horizontalSelector', 2, displayProfileNotifications)">Уведомления</button>
+            <div class="horizontalSelector__backArea" id="HS-selectedArea">
+                <div class="horizontalSelector__backBlock"></div>
+            </div>
+        </div>
+
+        <div id="profileBlockContent">
+            <div class="profileBlock__settingsCenter active" id="PB-settingsCenter">
+                <button onclick="redirect('/ReturnPasswordPage.html')">Сменить пароль</button>
+                <button class="destructive" onclick="leaveOutOfWebsite()"></i>Выход</button>
+            </div>
+
+            <div class="profileBlock__progressCenter" id="PB-progressCenter">
+            </div>
+
+            <div class="profileBlock__notificationCenter" id="PB-notificationCenter">
+            	<div class="contextInfo">На данный момент у вас нет уведомлений</div>
+            </div>
+        </div>
+    </div>
+
+	<div class="FNAlert" id="FNAlert" onclick="">
+    	<div class="FNAlert__inner">
+    		<div class="FNAlert__title">
+    			Покупка модуля
+    		</div>
+    		<div class="FNAlert__text">
+    			Модуль стоимостью 20 монет.
+				При подтверждении покупки с вашего аккаунта будет списано 20 монет
+    		</div>
+    		<div class="FNAlert__buttonStack">
+    			<button class="FNAlert__button closeButton" onclick="FNAlertClose()">OK</button>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="FNNotification" id="FNNotification">
+		<div class="FNNotification__imageHolder">
+			<img/>
+		</div>
+		<div class="FNNotification__info">
+			<div class="FNNotification__titleBlock">
+				<span class="FNNotification__title"></span>
+				<button class="FNNotification__cross" onclick="FNNotificationClose()"><i class="icon-cross"></i> </button>
+			</div>
+			<div class="FNNotification__text"></div>
+			<div class="FNNotification__buttonHolder">
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script src="static/gameScript.js"></script>
+<script src="static/baseScript.js"></script>
+<script>
+	// FNNotificationCall("Посевной газон под ключ", "static/imgs/cookie.png", "we use cookie", [{text: "ok",method: baseScriptTest, arguments: ["t"], style: "primary"}, {text: "no"}])
+</script>
+</html>

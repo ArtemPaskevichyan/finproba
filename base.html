@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../static/iconStyles.css">
+    <link rel="stylesheet" href="../static/iconStyles.css">
+    <link rel="stylesheet" href="static/styleAdd.css">
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <button onclick="goLoad()">Load Image</button>
+    <div class="some" id="some" style="width: 100px; height: 100px;">
+        
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+        <button onclick="profileOpenClose()">
+            Profile
+        </button>
+    </div>
+
+    <div class="profileBlock active" id="profileBlock">
+        <div class="profileBlock__controls">
+            <div class="profileBlock__title" id="PB-title">Профиль</div>
+            <button class="profileBlock__cross" onclick="profileOpenClose()"><i class="icon-cross"></i>X</button>
+        </div>
+
+        <div class="profileBlock__selector horizontalSelector" id="horizontalSelector">
+            <button class="horizontalSelector__button active" onclick="HSSelect('horizontalSelector', 1, displayProfileSettings)">Настройки</button>
+            <!-- <button class="horizontalSelector__button" onclick="HSSelect('horizontalSelector', 2, displayProfileProgress)">Прогресс</button> -->
+            <button class="horizontalSelector__button" onclick="HSSelect('horizontalSelector', 2, displayProfileNotifications)">Уведомления</button>
+            <div class="horizontalSelector__backArea" id="HS-selectedArea">
+                <div class="horizontalSelector__backBlock"></div>
+            </div>
+        </div>
+
+        <div id="profileBlockContent">
+            <div class="profileBlock__settingsCenter active" id="PB-settingsCenter">
+                <button onclick="redirect('/ReturnPasswordPage.html')">Сменить пароль</button>
+                <button class="destructive" onclick="leaveOutOfWebsite()"><i class="icon-arrowLeft"></i>Выход</button>
+            </div>
+
+            <div class="profileBlock__progressCenter" id="PB-progressCenter">
+            </div>
+
+            <div class="profileBlock__notificationCenter" id="PB-notificationCenter">
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        
+    
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+</div>
+
+
+<script src="static/testScript.js"></script>
+<script src="static/baseScript.js"></script>
+<script src="static/profileBlockScript.js"></script>
+</html>

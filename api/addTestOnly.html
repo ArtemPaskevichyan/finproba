@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/styleAdd.css">
+	<link id="webSiteApperiance" rel="stylesheet" type="text/css" href="../static/LightModeColors.css">
+	<link rel="stylesheet" type="text/css" href="../static/styleMobile.css">
+	<link rel="stylesheet" type="text/css" href="../static/iconStyles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://finproba.ru/static/imgs/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://finproba.ru/static/imgs/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://finproba.ru/static/imgs/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="https://finproba.ru/static/imgs/favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Загрузка теста</title>
+</head>
+<body>
+	<div class="AMPContent">
+		<div class="AMPContent__mainTitle">Добавление теста</div>
+		<hr>
+		<div class="AMPContent__fileBlock fileBlock">
+			<div class="fileBlock__title">Загрузка теста</div>
+			<div class="fileBlock__subtitle">Загрузите тест в формате .mm<br>Вы можете <a href="https://finproba.ru/api/addModule.html">загрузить тест и модуль</a> одновременно<br><i class="icon-exclamation"></i> Перед загрузкой внимательно проверьте соответствие coggle карты с инструкцией, описанной в <a href="https://finproba.ru">документации</a></div>
+			<div class="fileBlock__content">
+				<div class="fileBlock__drop">
+					<input type="file" id="testInput" single accept=".mm">
+					<label for="testInput" id="testInputBlock" class="fileBlock__dropArea">Прикрепите файл или перетащите его сюда</label>
+				</div>
+				<div class="fileBlock__verdict verdictBlock">
+					<div class="verdictBlock__header">
+						<span class="verdictBlock__title">Вердикт проверки</span>
+						<button class="verdictBlock__button">копировать</button>
+					</div>
+					<div class="verdictBlock__inner" id="verdictTestInner">
+					</div>
+					<div class="verdictBlock__conclusion" id="verdictTestConclusion"></div>
+				</div>
+			</div>
+			<div class="fileBlock__inputForTestId">
+				<div class="interactionBlock">
+					<input id="testIdSelector">
+					<label for="testIdSelector">Введите id модуля, к которму должен прикрепиться этот тест</label>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../api/static/addModuleScript.js"></script>
+<script type="text/javascript" src="../static/baseScript.js"></script>

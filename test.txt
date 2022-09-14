@@ -1,0 +1,46 @@
+<map version="0.9.0">
+    <node TEXT="test" FOLDED="false" POSITION="right" ID="62bc1d68b9ddc5097cde9566" X_COGGLE_POSX="0" X_COGGLE_POSY="0">
+        <edge COLOR="#b4b4b4"/>
+        <font NAME="Helvetica" SIZE="17"/>
+        <node TEXT="Начало" FOLDED="false" POSITION="right" ID="d77f91d061819046e7af383d">
+            <edge COLOR="#9ed56b"/>
+            <font NAME="Helvetica" SIZE="15"/>
+            <node TEXT="сюжет" FOLDED="false" POSITION="right" ID="3d598f43140be53888a4db96">
+                <edge COLOR="#e096e9"/>
+                <font NAME="Helvetica" SIZE="15"/>
+                <node TEXT="да>lsdfjkafsd" FOLDED="false" POSITION="right" ID="71dd934f47f2cc01d78cb3a2">
+                    <edge COLOR="#9ed56b"/>
+                    <font NAME="Helvetica" SIZE="15"/>
+                    <node TEXT="СЮЖЕТ" FOLDED="false" POSITION="right" ID="ebbcfd38e751d87094c3f7de">
+                        <edge COLOR="#e096e9"/>
+                        <font NAME="Helvetica" SIZE="15"/>
+                        <node TEXT="ДА>aasd" FOLDED="false" POSITION="right" ID="825b8760e7f8285db9beb91f">
+                            <edge COLOR="#9ed56b"/>
+                            <font NAME="Helvetica" SIZE="15"/>
+                            <node TEXT="Конец3" FOLDED="false" POSITION="right" ID="2f8c84cc78cd68efd9b4e8e9">
+                                <edge COLOR="#67d7c4"/>
+                                <font NAME="Helvetica" SIZE="15"/>
+                            </node>
+                        </node>
+                        <node TEXT="НЕТ>qwe" FOLDED="false" POSITION="right" ID="b391d217cfcf3ee396e12437">
+                            <edge COLOR="#9ed56b"/>
+                            <font NAME="Helvetica" SIZE="15"/>
+                            <node TEXT="" FOLDED="false" POSITION="right" ID="73c4297d197175a7a94b0268" X_COGGLE_JOINEDTO="2f8c84cc78cd68efd9b4e8e9">
+                                <edge COLOR="#67d7c4"/>
+                                <font NAME="Helvetica" SIZE="15"/>
+                            </node>
+                        </node>
+                    </node>
+                </node>
+                <node TEXT="нет>pop" FOLDED="false" POSITION="right" ID="01e3eb634d8aed8eec47eda7">
+                    <edge COLOR="#9ed56b"/>
+                    <font NAME="Helvetica" SIZE="15"/>
+                    <node TEXT="Конец1" FOLDED="false" POSITION="right" ID="e8ec793a9a5c38f235733c1f">
+                        <edge COLOR="#67d7c4"/>
+                        <font NAME="Helvetica" SIZE="15"/>
+                    </node>
+                </node>
+            </node>
+        </node>
+    </node>
+</map>
